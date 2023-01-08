@@ -10,6 +10,11 @@ const requiredKeys = [
   'ZipCode',
 ];
 
+// convert required keys to small caps
+function lowercase(string) {
+  return string.toLowerCase();
+}
+
 const url = 'https://jsonplaceholder.typicode.com/users';
 
 // Function to flatten o=nested object into single object
@@ -29,7 +34,7 @@ const flattenObject = (obj) => {
   return flattened;
 };
 
-// Create a DOM element
+// Create a DOM element to handle promise
 const createDomElement = (object) => {
   const gridDiv = document.createElement('div');
   gridDiv.className = 'grid-container';
@@ -51,11 +56,6 @@ const createDomElement = (object) => {
 
   return gridDiv;
 };
-
-// convert required keys to small caps
-function lowercase(string) {
-  return string.toLowerCase();
-}
 
 // First Button - Get users button
 const getUserButton = document.getElementById('get-users');
