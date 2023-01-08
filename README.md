@@ -11,4 +11,5 @@ Two buttons to fetch data from the backend
 
 - Separate works into different components that can be easily reused
 - Clear DOM elements before appending new elements
-- Simplify code 
+- Simplify code
+-  
